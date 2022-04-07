@@ -40,8 +40,8 @@
 </ul>
 
 <h4>Some ScreenShots from API</h4>
-<img src="img/service1.jpg" alt="getAllProduct" border="0">
-<img src="img/service2.jpg" alt="createProduct" border="0">
+<img src="/img/service1.jpg" alt="getAllProduct" border="0">
+<img src="/img/service2.jpg" alt="createProduct" border="0">
 
 ## Project setup
 ```
