@@ -6,6 +6,7 @@
 
 <h4>File Structure</h4>
 <code>
+.
 ├── config
 |   ├── auth.config.js
 |   ├── elastics.config.js
