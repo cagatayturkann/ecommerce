@@ -5,7 +5,7 @@
 <p>Server for E-commerce Project</p>
 
 <h4>File Structure</h4>
-```
+<code>
 ├── config
 |   ├── auth.config.js
 |   ├── elastics.config.js
@@ -28,7 +28,7 @@
 ├── app.js
 ├── logger.js
 └── package.json
-```
+</code>
 
 <p>I developed server-side with MVC approach. I used Express and NodeJS all server-side process.</p>
 <p>All models are under the Models folder and all data process are under Controller folder. There are two different models as Product and User and three different controllers as auth, user and product.</p>
