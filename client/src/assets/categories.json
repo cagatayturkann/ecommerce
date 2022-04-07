@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Shoes",
+    "img": "img/shoes.jpg"
+  },
+  {
+    "name": "Hoodies",
+    "img": "img/hoodie.jpg"
+  },
+  {
+    "name": "Computers",
+    "img": "img/computers.png"
+  },
+  {
+    "name": "Books",
+    "img": "img/books.jpg"
+  },
+  {
+    "name": "Kitchen",
+    "img": "img/kitchen.png"
+  },
+  {
+    "name": "Mobile",
+    "img": "img/mobile.png"
+  },
+  {
+    "name": "Cars",
+    "img": "img/cars.png"
+  },
+  {
+    "name": "Televisions",
+    "img": "img/televisions.png"
+  },
+  {
+    "name": "Movies",
+    "img": "img/movies.jpg"
+  },
+  {
+    "name": "Games",
+    "img": "img/games.png"
+  }
+]
