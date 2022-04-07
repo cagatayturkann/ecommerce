@@ -4,7 +4,7 @@
 
 <p>Server for E-commerce Project</p>
 
-<h4>File Structure</h4>
+<h3>File Structure</h3>
 <p>You can go directly the file by clicking the name</p>
 
    - [app.js](app.js)
