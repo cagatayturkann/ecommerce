@@ -5,7 +5,8 @@
 <p>Server for E-commerce Project</p>
 
 <h4>File Structure</h4>
-```bash
+``` bash
+
 ├── config
 |   ├── auth.config.js
 |   ├── elastics.config.js
@@ -28,6 +29,12 @@
 ├── app.js
 ├── logger.js
 └── package.json
+```
+
+```
+cd psqlserver
+npm install
+npm run dev
 ```
 
 <p>I developed server-side with MVC approach. I used Express and NodeJS all server-side process.</p>
