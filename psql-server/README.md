@@ -1,48 +1,37 @@
-# Logo Siber Güvenlik ve Ağ Teknolojileri Full Stack Bootcamp Graduation Project Server Side
+- __C:\\Users\\cagat\\Desktop\\BootCamp\\ecommerce\\psql\-server__
+   - [README.md](README.md)
+   - [app.js](app.js)
+   - __config__
+     - [auth.config.js](config/auth.config.js)
+     - [elastics.config.js](config/elastics.config.js)
+     - [postgre.config.js](config/postgre.config.js)
+   - __controllers__
+     - [authController.js](controllers/authController.js)
+     - [productController.js](controllers/productController.js)
+     - [productControllerBackup.js](controllers/productControllerBackup.js)
+     - [userController.js](controllers/userController.js)
+   - [logger.js](logger.js)
+   - __logs__
+     - [application\-2022\-03\-30\-06.log](logs/application-2022-03-30-06.log)
+     - [application\-2022\-03\-30\-12.log.gz](logs/application-2022-03-30-12.log.gz)
+     - [application\-2022\-03\-30\-13.log](logs/application-2022-03-30-13.log)
+     - [application\-2022\-04\-03\-02.log](logs/application-2022-04-03-02.log)
+     - [errors.log](logs/errors.log)
+     - [warnings.log](logs/warnings.log)
+   - __middlewares__
+     - [index.js](middlewares/index.js)
+   - __models__
+     - [Product.js](models/Product.js)
+     - [User.js](models/User.js)
+     - [index.js](models/index.js)
+   - [node\_modules](node_modules)
+   - [package\-lock.json](package-lock.json)
+   - [package.json](package.json)
+   - __routes__
+     - [authRouter.js](routes/authRouter.js)
+     - [productRouter.js](routes/productRouter.js)
+     - [userRouter.js](routes/userRouter.js)
+   - [test.md](test.md)
+   - __uploads__
+     - [image\_1648635972515\_airmax.jpg](uploads/image_1648635972515_airmax.jpg)
 
-<h2>Details</h2>
-
-<p>Server for E-commerce Project</p>
-
-<h4>File Structure</h4>
-``` bash
-
-├── config
-|   ├── auth.config.js
-|   ├── elastics.config.js
-|   └── postgre.config.js
-├── controllers
-|   ├── authController.js
-|   ├── productController.js
-|   └── userContoller.js
-├── logs
-├── middlewares
-|   └── index.js
-├── models
-|   ├── index.js
-|   ├── Product.js
-|   └── User.js
-├── routes
-|   ├── authRouter.js
-|   ├── productRouter.js
-|   └── userRouter.js
-├── app.js
-├── logger.js
-└── package.json
-```
-
-```
-cd psqlserver
-npm install
-npm run dev
-```
-
-<p>I developed server-side with MVC approach. I used Express and NodeJS all server-side process.</p>
-<p>All models are under the Models folder and all data process are under Controller folder. There are two different models as Product and User and three different controllers as auth, user and product.</p>
-
-## Project setup
-```
-cd psqlserver
-npm install
-npm run dev
-```
