@@ -43,10 +43,18 @@
           </div>
 
           <div class="d-flex align-items-center mb-4 pt-2">
-            <router-link to="#" class="btn btn-primary px-3">
+            <button class="btn btn-success px-3" v-on:click="addToCart()">
               <i class="fas fa-edit mr-1"></i>
-              <span>Add Cart</span>
+              <span>Add Item</span>
+            </button>
+            <router-link to="/cart" class="btn btn-primary px-3">
+              <i class="fas fa-edit mr-1"></i>
+              <span>Go to Cart</span>
             </router-link>
+            <button class="btn btn-danger px-3" v-on:click="removeItem">
+              <i class="fas fa-edit mr-1"></i>
+              <span>Remove Item</span>
+            </button>
           </div>
         </div>
       </div>
@@ -84,6 +92,16 @@ export default {
     const response = await ProductService.getProduct(this.$route.params.id)
     this.product = response
   },
+  methods: {
+    addToCart() {
+      // this.$store.commit('addToCart')
+      this.$store.dispatch('addToCart', this.product)
+    },
+    removeItem() {
+      this.$store.dispatch('removeItem', this.product)
+
+    }
+  }
 }
 </script>
 

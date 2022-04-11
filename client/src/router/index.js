@@ -15,6 +15,7 @@ import Home from '../views/adminPanel/Home.vue';
 import Product from '../views/adminPanel/Product.vue';
 import AddProduct from '../views/adminPanel/AddProduct.vue';
 import AuthService from '../services/AuthService';
+import CartView from '../views/CartView.vue'
 
 import NavBar from '../components/dashboard/NavBar.vue';
 import LogOut from '../components/dashboard/SideBar.vue';
@@ -52,6 +53,12 @@ const routes = [
 		name: 'results',
 		props: true,
 		component: SearchResultView,
+	},
+	{
+		path: '/cart',
+		name: 'cart',
+		props: true,
+		component: CartView,
 	},
 	{
 		path: '/register',

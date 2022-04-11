@@ -42,7 +42,6 @@
                 class="form-control"
                 placeholder="Search for products"
                 v-model="search"
-                
               />
               <div class="input-group-append">
                 <span class="input-group-text bg-transparent text-primary">
@@ -52,16 +51,16 @@
             </div>
           </form>
         </div>
-        <!-- <div class="col-lg-3 col-6 text-right">
-          <a href class="btn border">
+        <div class="col-lg-3 col-6 text-right">
+          <!-- <a href class="btn border">
             <i class="fas fa-heart text-primary"></i>
             <span class="badge">0</span>
-          </a>
-          <a href class="btn border">
+          </a>-->
+          <router-link to="/cart" class="btn border">
             <i class="fas fa-shopping-cart text-primary"></i>
-            <span class="badge">0</span>
-          </a>
-        </div> -->
+            <span class="badge">{{ count }}</span>
+          </router-link>
+        </div>
       </div>
     </div>
     <!-- Topbar End -->
@@ -81,7 +80,12 @@ export default {
   methods: {
     searchProduct() {
       // console.log(this.search);
-     this.$router.push({path:'/results',query:{search:this.search}});
+      this.$router.push({ path: '/results', query: { search: this.search } });
+    }
+  },
+  computed: {
+    count() {
+      return this.$store.state.cartItemCount
     }
   }
 }
