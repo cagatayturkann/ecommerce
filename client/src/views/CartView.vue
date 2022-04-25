@@ -82,7 +82,7 @@
                 <h5 class="font-weight-bold">Total</h5>
                 <h5 class="font-weight-bold">${{ totalPrice + 10 }}</h5>
               </div>
-              <button class="btn btn-block btn-primary my-3 py-3">Proceed To Checkout</button>
+              <router-link to="/checkout" class="btn btn-block btn-primary my-3 py-3">Proceed To Checkout</router-link>
             </div>
           </div>
         </div>

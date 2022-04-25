@@ -16,6 +16,8 @@ import Product from '../views/adminPanel/Product.vue';
 import AddProduct from '../views/adminPanel/AddProduct.vue';
 import AuthService from '../services/AuthService';
 import CartView from '../views/CartView.vue'
+import CheckOutView from '../views/CheckOutView.vue'
+
 
 import NavBar from '../components/dashboard/NavBar.vue';
 import LogOut from '../components/dashboard/SideBar.vue';
@@ -59,6 +61,12 @@ const routes = [
 		name: 'cart',
 		props: true,
 		component: CartView,
+	},
+	{
+		path: '/checkout',
+		name: 'checkout',
+		props: true,
+		component: CheckOutView,
 	},
 	{
 		path: '/register',

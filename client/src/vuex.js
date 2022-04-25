@@ -1,11 +1,13 @@
 import { createStore } from 'vuex';
 
+let cartItems = window.localStorage.getItem('cartItems');
+let cartItemCount = window.localStorage.getItem('cartItemCount');
 export const store = createStore({
 	state() {
 		return {
 			user: null,
-			cartItemCount: 0,
-			cartItems: [],
+			cartItems: cartItems ? JSON.parse(cartItems) : [],
+			cartItemCount: cartItemCount ? parseInt(cartItemCount) : 0,
 		};
 	},
 	getters: {
@@ -19,9 +21,11 @@ export const store = createStore({
 		},
 		addToCart: (context, payload) => {
 			context.commit('addToCart', payload);
+			context.commit('saveCart');
 		},
 		removeItem: (context, payload) => {
 			context.commit('removeItem', payload);
+			context.commit('saveCart');
 		},
 	}, //a way to change mutation
 	mutations: {
@@ -59,6 +63,9 @@ export const store = createStore({
 				}
 			}
 		},
+		saveCart(state) {
+			localStorage.setItem('cartItems', JSON.stringify(state.cartItems));
+			localStorage.setItem('cartItemCount', state.cartItemCount);
+		},
 	}, // this mutation will change the state
 });
-
